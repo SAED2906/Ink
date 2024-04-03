@@ -15,14 +15,11 @@ public class AudioMain {
 public static void playL(String Path) throws LineUnavailableException, AWTException {
 		
 		try {
-			
-			//Heal
 			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(Path).getAbsoluteFile());
 			Clip clip1 = AudioSystem.getClip();
 			clip1.open(audioInputStream);
 			clip1.start();
 		} catch (UnsupportedAudioFileException | IOException e) {
-			
 			e.printStackTrace();
 		}
 	

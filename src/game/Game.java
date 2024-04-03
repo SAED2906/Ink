@@ -43,6 +43,7 @@ public class Game implements Runnable {
 		//display.getFrame().addKeyListener(keyManager);
 		Assets.init();
 		
+		
 	}
 	private void tick() {
 		keyManager.tick();
@@ -80,6 +81,8 @@ public class Game implements Runnable {
 		
 		//End Draw
 		bs.show();
+
+		display.getCanvas().getToolkit().sync();
 		g.dispose();
 	
 		
@@ -89,7 +92,7 @@ public class Game implements Runnable {
 		
 		init();
 		
-		int fps = 60;
+		int fps = 144;
 		double timePerTick = 1000000000 / fps;
 		double delta = 0;
 		long now;

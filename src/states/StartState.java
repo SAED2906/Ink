@@ -50,17 +50,17 @@ public static void render(Graphics g) {
 	public static void tick() {
 		
 		//Camera.tick();
-		xLoc += velX;
+		//xLoc += velX;
 		//yLoc += velY;
 		inBounds();
 		getInput();
 		
 		
-		if (falling && inBounds()) {
-			yLoc += velY;
-			//System.out.println(inBounds());
-			velY += gravity;
-		}
+		// if (falling && inBounds()) {
+		// 	yLoc += velY;
+		// 	//System.out.println(inBounds());
+		// 	velY += gravity;
+		// }
 	}
 	
 	

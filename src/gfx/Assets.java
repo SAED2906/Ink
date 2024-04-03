@@ -6,7 +6,7 @@ public class Assets {
 	
 	private static final int width = 32, height = 32;
 	
-	public static BufferedImage grass, dirt, player, stone, bg1, bg2, bg3, TC, T, man;
+	public static BufferedImage grass, dirt, player, stone, bg1, bg2, bg3, TC, T, man, ink, camp;
 	
 	public static void init() {
 		
@@ -28,6 +28,10 @@ public class Assets {
 		TC = sheet5.crop(0, 0, 1920, 1080);
 		T = sheet6.crop(0, 0, 1920, 1080);
 		man = sheet7.crop(0, 0, 100, 100);
+
+		ink = new SpriteSheet(imageLoader.loadImage("src/GameTexture/ink.png")).crop(0,0,100,100);
+		camp = new SpriteSheet(imageLoader.loadImage("src/GameTexture/camp.png")).crop(0,0,100,100);
+		
 		
 		
 	}

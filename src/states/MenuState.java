@@ -80,7 +80,7 @@ public class MenuState {
 		
 		if (temp == true) {
 		if ((timestamp2-timestamp) > 1000000000) {
-			Game.setState("Start");
+			Game.setState("Scene1");
 			timestamp = 0;
 			timestamp2 = 0;
 			Opacity = 0;

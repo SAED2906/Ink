@@ -8,7 +8,7 @@ public class KeyManager implements KeyListener {
 	
 	
 	private boolean[] keys;
-	public boolean up, down, left, right, space, m1;
+	public boolean up, down, left, right, space, m1, shift;
 	
 	public KeyManager() {
 		keys = new boolean[256];
@@ -20,6 +20,7 @@ public class KeyManager implements KeyListener {
 		left = keys[KeyEvent.VK_LEFT];
 		right = keys[KeyEvent.VK_RIGHT];
 		space = keys[KeyEvent.VK_SPACE];
+		shift = keys[KeyEvent.VK_SHIFT];
 	}
 
 	@Override
@@ -33,13 +34,13 @@ public class KeyManager implements KeyListener {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		if (e.getKeyCode() == KeyEvent.VK_SPACE) {
+		// if (e.getKeyCode() == KeyEvent.VK_SPACE) {
 			
-			System.out.println("Yes");
+		// 	System.out.println("Yes");
 			
-		}
+		// }
 		keys[e.getKeyCode()] = true;
-		System.out.println("Pressed");
+		//System.out.println("Pressed");
 	}
 
 	@Override

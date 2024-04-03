@@ -16,23 +16,25 @@ public class State {
 		if (Game.getState().equalsIgnoreCase("start")) {
 			
 			StartState.render(g);
-			}
+		}
+		if (Game.getState().equalsIgnoreCase("Scene1")) {
+			Scene1.render(g);
+		}
 		
 	}
 	
 	public static void tick() {
 		
 		if (Game.getState().equalsIgnoreCase("menu")) {
-			
 			MenuState.tick();
-			}
+		}
 		if (Game.getState().equalsIgnoreCase("start")) {
-			
 			StartState.tick();
-			}
-		
-		
-		
+		}
+
+		if (Game.getState().equalsIgnoreCase("Scene1")) {
+			Scene1.tick();
+		}
 		
 	}
 	
